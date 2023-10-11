@@ -1,0 +1,95 @@
+/* #region common */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --zoom-white: #ffffff;
+    --zoom-nav: #222222;
+    --zoom-green: #4bc800;
+}
+/* #endregion common */
+
+/* #region utility */
+.format_all{
+    list-style: none;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+
+.p-abso{
+    position: absolute;
+}
+/* #endregion utility */
+
+/* #region layout */
+.container{
+	width: 90%;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+/* #endregion layout */
+
+/* #region header */
+header{
+    background: black;
+    height: 70px;
+}
+/* #endregion header */
+
+/* #region main */
+main{
+    background-color: black;
+    height: calc(100vh - 190px);
+    overflow-y: scroll;
+}
+
+.user-card{
+    width: calc((100% / 12) * 2 - 2rem);
+    margin: 2rem 1rem;
+    min-width: 200px;
+}
+
+.user-card img{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+/* #endregion main */
+
+/* #region footer */
+footer{
+    height: 120px;
+    background: var(--zoom-nav);
+}
+/* #endregion footer */
+
+/* #region Debug */
+.debug .container{
+    background: red;
+}
+
+.debug .row{
+    width: 100%;
+    background: yellow;
+}
+
+.debug .user-card{
+    background: orange;
+    border: 2px solid red;
+}
+/* #endregion Debug */
