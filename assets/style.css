@@ -9,6 +9,7 @@
     --zoom-white: #ffffff;
     --zoom-nav: #222222;
     --zoom-green: #4bc800;
+    --zoom-grey: #4a4a4a;
 }
 /* #endregion common */
 
@@ -40,8 +41,6 @@
 .row{
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
 }
 /* #endregion layout */
 
@@ -49,6 +48,18 @@
 header{
     background: black;
     height: 70px;
+    width: 100%;
+    color: white;
+    text-align: end;
+    padding: 1rem;
+}
+
+header span{
+    background: var(--zoom-grey);
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
 }
 /* #endregion header */
 
@@ -57,6 +68,12 @@ main{
     background-color: black;
     height: calc(100vh - 190px);
     overflow-y: scroll;
+    padding-top: 2rem;
+}
+
+main .row{
+    justify-content: center;
+    align-content: center;
 }
 
 .user-card{
