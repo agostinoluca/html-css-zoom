@@ -13,6 +13,17 @@
     --zoom-black: #010101;
     --zoom-red: #ff0000;
 }
+
+.btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid var(--zoom-white);
+    filter: brightness(150%);
+}
 /* #endregion common */
 
 /* #region utility */
@@ -84,12 +95,14 @@ header{
     padding: 1rem;
 }
 
-header span{
+header .btn{
     background: var(--zoom-grey);
     border-radius: 0.3rem;
     padding: 0.4rem;
     font-size: 1rem;
     margin-left: 0.5rem;
+    color: var(--zoom-white);
+    
 }
 /* #endregion header */
 
@@ -155,7 +168,7 @@ footer{
     justify-content: end;
 }
 
-.end-meeting{
+.right-footer .btn{
     background: var(--zoom-grey);
     height: 80px;
     color: var(--zoom-red);
