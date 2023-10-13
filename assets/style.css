@@ -11,6 +11,7 @@
     --zoom-green: #4bc800;
     --zoom-grey: #4a4a4a;
     --zoom-black: #010101;
+    --zoom-red: #ff0000;
 }
 /* #endregion common */
 
@@ -63,7 +64,7 @@
 /* #region layout */
 .container{
 	width: 90%;
-	max-width: 1152px;
+	max-width: 1440px;
 	margin: auto;
 }
 
@@ -95,7 +96,7 @@ header span{
 /* #region main */
 main{
     background-color: var(--zoom-black);
-    height: calc(100vh - 160px);
+    height: calc(100vh - 120px);
     overflow-y: auto;
     padding-top: 2rem;
 }
@@ -129,7 +130,7 @@ main .row{
 
 /* #region footer */
 footer{
-    height: 120px;
+    height: 80px;
     background: var(--zoom-nav);
     color: var(--zoom-white);
 }
@@ -139,6 +140,7 @@ footer{
     flex-grow: 1;
     align-items: center;
     text-align: center;
+    height: 80px;
 }
 
 .center-footer{
@@ -146,6 +148,22 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 80px;
+}
+
+.right-footer{
+    justify-content: end;
+}
+
+.end-meeting{
+    background: var(--zoom-grey);
+    height: 80px;
+    color: var(--zoom-red);
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: calc(80px - 2rem);
+    padding: 1rem;
+    min-width: 120px;
 }
 
 .items{
@@ -157,8 +175,6 @@ footer{
     margin-top: 0.5rem;
     color: var(--zoom-white);
 }
-
-
 /* #endregion footer */
 
 /* #region Debug */
@@ -178,14 +194,11 @@ footer{
 
 .debug .left-footer, 
 .debug .right-footer{
-    background: red;
-    height: 120px;
+    background: burlywood;
 }
 
 .debug .center-footer{
-    flex-grow: 2;
     background: green;
-    height: 120px;
 }
 
 /* #endregion Debug */
