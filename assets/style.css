@@ -120,15 +120,15 @@ main .row{
 }
 
 .user-card{
-    width: calc((100% / 7) - 2rem);
-    margin: 2rem 1rem;
+    width: calc((100% / 7) - 0.4rem);
+    margin: 0.3rem 0.2rem;
     min-width: 120px;
     position: relative;
 }
 
 .user-card img{
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
 }
 
 .micro-off{
