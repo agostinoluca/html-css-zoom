@@ -27,6 +27,18 @@
     display: flex;
 }
 
+.j-center{
+    justify-content:center;
+}
+
+.j-start{
+    justify-content: flex-start;
+}
+
+.j-end{
+    justify-content: flex-end;
+}
+
 .p-abso{
     position: absolute;
 }
@@ -48,7 +60,7 @@
 /* #region header */
 header{
     background: var(--zoom-black);
-    height: 70px;
+    height: 40px;
     width: 100%;
     color: var(--zoom-white);
     text-align: end;
@@ -59,7 +71,7 @@ header span{
     background: var(--zoom-grey);
     border-radius: 0.3rem;
     padding: 0.4rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
 }
 /* #endregion header */
@@ -67,7 +79,7 @@ header span{
 /* #region main */
 main{
     background-color: var(--zoom-black);
-    height: calc(100vh - 190px);
+    height: calc(100vh - 160px);
     overflow-y: auto;
     padding-top: 2rem;
 }
@@ -81,11 +93,21 @@ main .row{
     width: calc((100% / 7) - 2rem);
     margin: 2rem 1rem;
     min-width: 120px;
+    position: relative;
 }
 
 .user-card img{
     width: 100%;
     aspect-ratio: 16/9;
+}
+
+.micro-off{
+    left: 0;
+    bottom: 0.4rem;
+    color: var(--zoom-white);
+    background: rgba(2, 2, 2, 0.377);
+    padding: 0.2rem;
+    font-size: 0.7rem;
 }
 /* #endregion main */
 
@@ -94,6 +116,17 @@ footer{
     height: 120px;
     background: var(--zoom-nav);
 }
+
+.left-footer, 
+.right-footer{
+    flex-grow: 1;
+}
+
+.center-footer{
+    flex-grow: 2;
+}
+
+
 /* #endregion footer */
 
 /* #region Debug */
@@ -110,4 +143,17 @@ footer{
     background: orange;
     border: 2px solid red;
 }
+
+.debug .left-footer, 
+.debug .right-footer{
+    background: red;
+    height: 120px;
+}
+
+.debug .center-footer{
+    flex-grow: 2;
+    background: white;
+    height: 120px;
+}
+
 /* #endregion Debug */
