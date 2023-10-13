@@ -27,20 +27,36 @@
     display: flex;
 }
 
-.j-center{
+.x-center{
     justify-content:center;
 }
 
-.j-start{
+.x-start{
     justify-content: flex-start;
 }
 
-.j-end{
+.x-end{
     justify-content: flex-end;
+}
+
+.y-center{
+    align-items: center;
 }
 
 .p-abso{
     position: absolute;
+}
+
+.d-block{
+    display: block;
+}
+
+.tx-center{
+    text-align: center;
+}
+
+.success-color{
+    color: var(--zoom-green);
 }
 /* #endregion utility */
 
@@ -115,15 +131,31 @@ main .row{
 footer{
     height: 120px;
     background: var(--zoom-nav);
+    color: var(--zoom-white);
 }
 
 .left-footer, 
 .right-footer{
     flex-grow: 1;
+    align-items: center;
+    text-align: center;
 }
 
 .center-footer{
     flex-grow: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.items{
+    margin: 0.5rem;
+}
+
+.text-icon{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--zoom-white);
 }
 
 
@@ -152,7 +184,7 @@ footer{
 
 .debug .center-footer{
     flex-grow: 2;
-    background: white;
+    background: green;
     height: 120px;
 }
 
