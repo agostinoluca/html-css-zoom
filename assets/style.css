@@ -10,6 +10,7 @@
     --zoom-nav: #222222;
     --zoom-green: #4bc800;
     --zoom-grey: #4a4a4a;
+    --zoom-black: #010101;
 }
 /* #endregion common */
 
@@ -18,7 +19,7 @@
     list-style: none;
     & a{
         text-decoration: none;
-        color: white;
+        color: var(--zoom-white);
     }
 }
 
@@ -34,7 +35,7 @@
 /* #region layout */
 .container{
 	width: 90%;
-	max-width: 1500px;
+	max-width: 1152px;
 	margin: auto;
 }
 
@@ -46,10 +47,10 @@
 
 /* #region header */
 header{
-    background: black;
+    background: var(--zoom-black);
     height: 70px;
     width: 100%;
-    color: white;
+    color: var(--zoom-white);
     text-align: end;
     padding: 1rem;
 }
@@ -65,9 +66,9 @@ header span{
 
 /* #region main */
 main{
-    background-color: black;
+    background-color: var(--zoom-black);
     height: calc(100vh - 190px);
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-top: 2rem;
 }
 
@@ -77,9 +78,9 @@ main .row{
 }
 
 .user-card{
-    width: calc((100% / 12) * 2 - 2rem);
+    width: calc((100% / 7) - 2rem);
     margin: 2rem 1rem;
-    min-width: 200px;
+    min-width: 120px;
 }
 
 .user-card img{
